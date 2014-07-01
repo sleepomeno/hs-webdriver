@@ -19,7 +19,11 @@ module Test.WebDriver
        , module Test.WebDriver.Exceptions
        ) where
 
+import Control.Monad.IO.Class (MonadIO)
+import Control.Monad.Catch (MonadThrow, MonadCatch)
+import Control.Applicative
 import Test.WebDriver.Types
 import Test.WebDriver.Commands
 import Test.WebDriver.Monad
 import Test.WebDriver.Exceptions
+
